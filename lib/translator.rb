@@ -1,13 +1,32 @@
-# require modules here
+require "pry"
+require "yaml"
 
-def load_library
-  # code goes here
+def load_library(file_path)
+  file = File.read("./lib/emoticons.yml")
+  library = YAML.load_file("./lib/emoticons.yml")
 end
 
-def get_japanese_emoticon
-  # code goes here
-end
 
-def get_english_meaning
-  # code goes here
-end
+  # hash = { }
+  #   emoticons.each do |key, value|
+  #   :get_emoticon = { }
+  #
+  # end
+
+
+
+
+
+
+
+
+
+
+
+# def get_japanese_emoticon
+#   # code goes here
+# end
+#
+# def get_english_meaning
+#   # code goes here
+# end
