@@ -4,14 +4,12 @@ require "yaml"
 def load_library(file_path)
   file = File.read("./lib/emoticons.yml")
   emoticons = YAML.load_file("./lib/emoticons.yml")
-end
 
+  library = { :get_meaning = { }
+    # emoticons.each do |key, value|
+    :get_emoticon = { } }
 
-  # hash = { }
-  #   emoticons.each do |key, value|
-  #   :get_emoticon = { }
-  #
-  # end
+  end
 
 
 
