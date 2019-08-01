@@ -5,14 +5,13 @@ def load_library(file_path)
   file = File.read("./lib/emoticons.yml")
   emoticons = YAML.load_file("./lib/emoticons.yml")
 
-  library = { "get_meaning" => { },
-    "get_emoticon" => { } }
+  library = { "get_meaning" => { }, "get_emoticon" => { } }
 
   end
 
 
 
-
+  # emoticons.each do |key, value|
 
 
 
